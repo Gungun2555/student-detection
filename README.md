@@ -164,3 +164,13 @@ docker run --gpus all -p 8000:8000 \
 | Low     | 0.40      |
 
 Quality is auto-detected per face using blur score + resolution.
+
+
+cd project
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+Invoke-WebRequest -Uri "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth" -OutFile "models\GFPGANv1.4.pth"
+python enroll_students.py
+python recognize_photos.py --save-json
