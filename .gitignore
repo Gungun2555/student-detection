@@ -8,3 +8,6 @@ models/*.pth
 output/
 *.egg-info/
 .env
+gfpgan/weights/
+*.pth
+*.zip
