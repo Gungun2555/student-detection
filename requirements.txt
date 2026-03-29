@@ -1,0 +1,23 @@
+# Core ML
+insightface>=0.7.3
+onnxruntime>=1.16.0   # use onnxruntime (CPU) if no GPU
+numpy>=1.24.0
+opencv-python>=4.8.0
+
+# Face Enhancement (optional but recommended)
+gfpgan>=1.3.8
+basicsr>=1.4.2
+facexlib>=0.3.0
+realesrgan>=0.3.0
+
+# Vector Search
+faiss-cpu>=1.7.4          # use faiss-cpu if no GPU
+
+# API
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# Utilities
+Pillow>=10.0.0
+tqdm>=4.66.0

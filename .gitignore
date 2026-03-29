@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+database/faiss_index.bin
+database/metadata.pkl
+models/*.pth
+output/
+*.egg-info/
+.env
